@@ -1,0 +1,30 @@
+@import "mixins/texts";
+
+.require-dots {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.require-dots__element {
+	@include text-label;
+	box-sizing: border-box;
+	color: $color-blue-grey-5;
+	margin: 4px 8px 4px 0;
+	min-width: 128px;
+	padding-right: 8px;
+	&:before {
+		background: $color-grey-5;
+		border-radius: 50%;
+		content: "";
+		display: inline-block;
+		height: 8px;
+		margin-right: 8px;
+		width: 8px;
+	}
+}
+
+.require-dots__element--ok {
+	&:before {
+		background: $color-success;
+	}
+}

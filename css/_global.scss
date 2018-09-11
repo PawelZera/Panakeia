@@ -1,0 +1,34 @@
+@import "variables";
+@import "mixins/paddings";
+
+body, a, button, input, label {
+	letter-spacing: 0.2px;
+    font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: $color-primary;
+}
+
+body {
+	background-color: $color-bg-primary;
+	width: 100%;
+}
+
+*::selection {
+	background: $color-primary;
+	color: $color-white;
+}
+
+*::-moz-selection {
+	background: $color-primary;
+	color: $color-white;
+}
+
+*::selection {
+	background: $color-primary;
+	color: $color-white;
+}
+
+*::-moz-selection {
+	background: $color-primary;
+	color: $color-white;
+}

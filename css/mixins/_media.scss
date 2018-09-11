@@ -1,0 +1,29 @@
+@import "variables";
+
+@mixin max($breakpoint) {
+	@each $breakpoint-class, $breakpoint-start, $breakpoint-end in $breakpoints {
+		@if ($breakpoint-class == $breakpoint) {
+			@media (max-width: $breakpoint-end) {
+				@content;
+			}
+		}
+	}
+}
+@mixin min($breakpoint) {
+	@each $breakpoint-class, $breakpoint-start, $breakpoint-end in $breakpoints {
+		@if ($breakpoint-class == $breakpoint) {
+			@media (min-width: $breakpoint-start) {
+				@content;
+			}
+		}
+	}
+}
+@mixin only($breakpoint) {
+	@each $breakpoint-class, $breakpoint-start, $breakpoint-end in $breakpoints {
+		@if ($breakpoint-class == $breakpoint) {
+			@media (min-width: $breakpoint-start) and (max-width: $breakpoint-end) {
+				@content;
+			}
+		}
+	}
+}

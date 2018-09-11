@@ -1,0 +1,73 @@
+@import "variables";
+.nav {
+  @media only screen and (max-width:$breakpoint-l) {
+    width: 100%;
+    top: 60px;
+    &:before {
+      content: '\2630';
+      display: block;
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      line-height: 20px;
+      cursor: pointer;
+      font-size: 40px;
+    }
+  }
+}
+.nav__list {
+  display: flex;
+  @media only screen and (max-width:$breakpoint-l) {
+    background: $color-white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    /// Transition
+    display: none;
+  }
+}
+.nav-element {
+  padding: $padding-xl $padding-s 0 $padding-s;
+  margin:0;
+}
+.nav-element__link {
+  font-family: $family-secondary;
+  white-space:nowrap;
+}
+.nav-element--active {
+  border-radius: 35px;
+  background-color: #dd4b2b;
+  color: #edeff1;
+  padding: 17px;
+}
+.nav--open {
+  @media only screen and (max-width:$breakpoint-l) {
+    &:before {
+      content: '\2573';
+      display: block;
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      line-height: 20px;
+      cursor: pointer;
+      z-index: $z-mobile-menu;
+      font-size: 40px;
+    }
+    .nav__list {
+      overflow: auto;
+      display:block;
+    }
+    .nav-element {
+      width: 100%;
+      height: 80px;
+      display: block;
+      text-align: center;
+      margin: 0 0 0 0;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import "variables";
+
+$values: (block, inline-block, none, flex, inline-flex);
+
+@each $breakpoint, $width in $grid-breakpoints {
+  @media(min-width: $width) {
+    @each $value in $values {
+      ._d--#{$value}-#{$breakpoint} {
+        display: $value !important;
+      }
+    }
+  }
+}

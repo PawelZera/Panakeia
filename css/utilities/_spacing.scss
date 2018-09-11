@@ -1,0 +1,45 @@
+@import "variables";
+
+// _{property}{sides}-{breakpoint}-{size}
+
+@mixin make-modifiers($margin-classes, $values) {
+	@each $value in $values {
+		@each $property, $class in $margin-classes {
+			._#{$class}--#{$value} {
+				#{$property}: $value + px !important;
+			}
+		}
+	}
+	@each $breakpoint, $width in $grid-breakpoints {
+		@if ($width >0) {
+			@media(min-width: $width) {
+				@each $value in $values {
+					@each $property, $class in $margin-classes {
+						._#{$class}--#{$value}-#{$breakpoint} {
+							#{$property}: $value + px !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+$margin-properties: (
+		margin: m,
+		margin-top: mt,
+		margin-right: mr,
+		margin-bottom: mb,
+		margin-left: ml
+);
+$margin-values: (0, 2, 4, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 80, 96, 128);
+$padding-properties: (
+		padding: p,
+		padding-top: pt,
+		padding-right: pr,
+		padding-bottom:pb,
+		padding-left: pl
+);
+$padding-values: (0, 2, 4, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 96, 128);
+
+@include make-modifiers($margin-properties, $margin-values);
+@include make-modifiers($padding-properties, $padding-values);

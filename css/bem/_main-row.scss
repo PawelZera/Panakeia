@@ -1,0 +1,23 @@
+.main-row {
+  color: $color-white;
+  font-family: $family-secondary;
+  text-align: center;
+  padding-bottom: 158px;
+
+}
+.main-row__header {
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 1);
+  padding: 489px 0 80px 0;
+  text-align: center;
+  font-size : 72px;
+  font-weight: $weight-light;
+  line-height: 70px;
+  @media only screen and (max-width:$breakpoint-l) {
+    padding-top: 100px;
+  }
+}
+.main-row__header--small {
+    margin: 20px;
+    font-size: 30px;
+    font-weight: $weight-bold;
+}

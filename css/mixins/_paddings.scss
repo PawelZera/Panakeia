@@ -1,0 +1,37 @@
+@import "variables";
+@import "media";
+
+@mixin horizontal-padding($size: l) {
+	@if $size == l {
+		padding-left: $padding-xl;
+		padding-right: $padding-xl;
+	} @else if $size == m {
+		padding-left: $padding-l;
+		padding-right: $padding-l;
+	}
+	@include max(m) {
+		padding-left: $padding-m;
+		padding-right: $padding-m;
+	}
+	@include max(s) {
+		padding-left: $padding-s;
+		padding-right: $padding-s;
+	}
+}
+@mixin vertical-padding($size: l) {
+	@if $size == l {
+		padding-top: $padding-xl;
+		padding-bottom: $padding-xl;
+	} @else if $size == m {
+		padding-top: $padding-l;
+		padding-bottom: $padding-l;
+	}
+	@include max(m) {
+		padding-top: $padding-m;
+		padding-bottom: $padding-m;
+	}
+	@include max(s) {
+		padding-top: $padding-s;
+		padding-bottom: $padding-s;
+	}
+}

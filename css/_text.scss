@@ -1,0 +1,21 @@
+@import "variables";
+@import "mixins/texts";
+
+.text {
+	& > p {
+		@include text-paragraph;
+	}
+	& > h2 {
+		@include text-h2;
+		margin-bottom: 8px;
+		margin-top: 48px;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+	& > h3 {
+		@include text-h3;
+		margin-top: 32px;
+		margin-bottom: 8px;
+	}
+}

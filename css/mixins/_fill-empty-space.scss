@@ -1,0 +1,14 @@
+@import "variables";
+
+@mixin fill-empty-space($color) {
+	&:after {
+		content: "";
+		background: $color;
+		display: block;
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		z-index: -1;
+		bottom: 0;
+	}
+}

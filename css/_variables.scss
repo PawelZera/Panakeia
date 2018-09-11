@@ -1,0 +1,150 @@
+// --- TRANSITIONS ---
+
+$transition-time1: .2s;
+$transition-time2: .35s;
+$transition-time3: .5s;
+$transition-time4: 1.2s;
+$transition-time5: 2.4s;
+
+$transition1: all $transition-time1;
+$transition2: all $transition-time2;
+$transition3: all $transition-time3;
+$transition4: all $transition-time4;
+$transition5: all $transition-time5;
+
+$transition-mouse-event-time: $transition-time1;
+
+$transition-button: all $transition-time1;
+$transition-mouse-event: all $transition-mouse-event-time;
+
+// --- BORDER RADIUS ---
+$radius-primary: 4px;
+
+// --- FONTS ---
+
+$family-primary: "Roboto";
+$family-secondary: "Roboto Slab";
+
+
+
+
+$weight-light: 300;
+$weight-regular: 400;
+$weight-semi-bold: 600;
+$weight-bold: 700;
+$weight-extra-bold: 800;
+
+// --- COLORS ---
+
+$color-primary: #31353e;
+$color-primary-x: #f37920;
+$color-background: #d75d0e;
+
+$color-secondary-dark: #4d8dff;
+$color-secondary: #4a9ffb;
+
+$color-buttons-1: #dd4b2b;
+$color-buttons-2: #4b4e73;
+
+$color-success-light: #6ae6ad;
+$color-success: #2bcd71;
+$color-warning: #ffcb21;
+$color-error: #fe4c58;
+
+$color-dark-1: #616366;
+$color-dark-2: #28282d;
+$color-dark-3: #0c0c14;
+
+$color-grey-1: #fbfbfb;
+$color-grey-2: #f9f9f9;
+$color-grey-3: #f5f5f5;
+$color-grey-4: #e8e8e8;
+$color-grey-5: #e0e0e0;
+$color-grey-6: #c5c7d0;
+
+$color-white: #ffffff;
+
+$color-blue-grey-1: #fafaff;
+$color-blue-grey-2: #f8f8ff;
+$color-blue-grey-3: #f0f5ff;
+$color-blue-grey-4: #b1b5c9;
+$color-blue-grey-5: #7e808f;
+
+$color-bg-primary: #edeff1;
+
+  // --- SHADOWS ---
+$shadow-popup: 0 0 16px 0 rgba($color-dark-3, 0.15);
+$shadow-panel: 0 0 32px 0 rgba($color-dark-3, 0.15);
+$shadow-icon: 0px 0px 8px rgba($color-dark-3, 1);
+
+// --- BREAKPOINTS ---
+
+$grid-breakpoints: (
+	xs: 0,
+	s: 576px,
+	m: 768px,
+	l: 992px,
+	xl: 1380px
+);
+
+$breakpoint-xs: 0;
+$breakpoint-s: 576px;
+$breakpoint-m: 768px;
+$breakpoint-l: 992px;
+$breakpoint-xl: 1380px;
+$breakpoint-infinity: 999999px;
+$breakpoints: (
+		(xs, $breakpoint-xs, $breakpoint-s - 1),
+		(s, $breakpoint-s, $breakpoint-m - 1),
+		(m, $breakpoint-m, $breakpoint-l - 1),
+		(l, $breakpoint-l, $breakpoint-xl - 1),
+		(xl, $breakpoint-xl, $breakpoint-infinity)
+);
+
+// --- Z-INDEX ---
+
+$z-basic: 100;
+$z-top-bar: 500;
+$z-popup: 1000;
+$z-on-popup: 1010;
+$z-tooltip: 2000;
+$z-mobile-menu: 3000;
+$z-tour-overlay: 5000;
+$z-flash-message: 10000;
+
+// --- PADINGS ---
+
+$padding-xl: 50px;
+$padding-l: 40px;
+$padding-m: 28px;
+$padding-s: 16px;
+
+
+$height-menu: 120px;
+$height-menu-mobile: 80px;
+
+// --- ICONS ---
+
+$icon--eye-off: \e916;
+$icon--hamburger: \e915;
+$icon--scroll: \e914;
+$icon--info: \e912;
+$icon--alert: \e913;
+$icon--eye: \e911;
+$icon--heart-filled: \e90f;
+$icon--heart: \e910;
+$icon--search: \e90e;
+$icon--pause: \e90a;
+$icon--volume-off: \e90b;
+$icon--volume-up: \e90c;
+$icon--clock: \e90d;
+$icon--check: \e906;
+$icon--lock: \e900;
+$icon--logout: \e901;
+$icon--play: \e902;
+$icon--repeat: \e903;
+$icon--shop: \e904;
+$icon--arrow-2-right: \e905;
+$icon--close: \e907;
+$icon--completed: \e908;
+$icon--dropdown: \e909;

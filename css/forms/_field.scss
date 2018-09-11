@@ -1,0 +1,75 @@
+@import "mixins/texts";
+@import "variables";
+@import "mixins/hover";
+
+.field--search {
+	@extend .icon;
+	@extend .icon--search;
+	position: relative;
+	&:before {
+		bottom: 18px;
+		color: $color-grey-6;
+		position: absolute;
+		right: 16px;
+	}
+}
+
+.field__label {
+	@include text-label;
+	display: block;
+}
+
+.field__label + .field__input-wr {
+	margin-top: 8px;
+}
+
+.field__input {
+	@include text-input;
+	background: $color-white;
+	border: 1px solid $color-grey-5;
+	box-sizing: border-box;
+	display: block;
+	line-height: 54px;
+	height: 56px;
+	padding: 0 16px;
+	width: 100%;
+
+	&::placeholder {
+		@include text-placeholder;
+	}
+	@include hover {
+		border-color: $color-blue-grey-4;
+	}
+	&:focus {
+		border-color: $color-secondary-dark;
+	}
+}
+
+.field__message {
+	@include text-label;
+	color: $color-blue-grey-5;
+	margin-top: 8px;
+}
+
+.field--error {
+	.field__input {
+		border-color: $color-error;
+	}
+	.field__message {
+		color: $color-error;
+	}
+}
+
+.field--filled {
+	.field__input-wr {
+		@extend .icon;
+		@extend .icon--completed;
+		position: relative;
+		&:before {
+			color: $color-success;
+			position: absolute;
+			right: 16px;
+			bottom: 20px;
+		}
+	}
+}

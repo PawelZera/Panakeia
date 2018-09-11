@@ -1,0 +1,25 @@
+@import "variables";
+
+._ws-pw {
+	white-space: pre-wrap;
+}
+
+._b {
+	font-weight: bolder;
+}
+
+._ta-c {
+	text-align: center;
+}
+
+._c-d {
+	color: $color-dark-3;
+}
+
+._filter-shadow {
+	filter: drop-shadow(0 48px 64px rgba(40, 40, 45, 0.08));
+}
+
+._font-block {
+	font-family: "Blokk";
+}
