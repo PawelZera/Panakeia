@@ -2358,7 +2358,7 @@ html {
 .row {
   display: flex;
   flex-flow: wrap;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   margin: 0 auto; }
 
@@ -2438,7 +2438,6 @@ html {
 .tile {
   text-align: center;
   margin: 0 auto;
-  width: 371px;
   padding: 0 10px 80px 10px; }
 
 .tile__header {
@@ -2455,12 +2454,18 @@ html {
   margin: 0 auto;
   padding-bottom: 60px;
   padding-top: 30px; }
+  @media only screen and (max-width: 992px) {
+    .tile__paragraph {
+      text-align: center; } }
 
 .tile__img {
   padding-bottom: 35px; }
 
 .tile--text-left {
   text-align: left; }
+  @media only screen and (max-width: 992px) {
+    .tile--text-left {
+      text-align: center; } }
 
 .tile__header--margin-top {
   margin-top: 62px; }
@@ -2474,7 +2479,7 @@ html {
   justify-content: space-between; }
   @media only screen and (max-width: 992px) {
     .tile__email {
-      width: 420px; } }
+      width: 100%; } }
 
 ._ws-pw {
   white-space: pre-wrap; }
