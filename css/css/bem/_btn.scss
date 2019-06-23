@@ -1,0 +1,44 @@
+.btn {
+  font-family: "Roboto Slab";
+  font-size: 18px;
+  border-radius: 35px;
+  background-color: white;
+  &:hover {
+    background-color: $color-primary-x;
+    color: $color-white;
+  }
+}
+.btn--orange {
+  background-color: $color-buttons-1;
+}
+.btn--blue {
+  background-color: $color-buttons-2;
+}
+.btn--main {
+  padding: 19px 60px 21px 63px;
+}
+.btn--news {
+  padding: 21px 52px 22px 56px;
+  font-family: $family-primary;
+  font-size: 15px;
+}
+.btn--email {
+  padding: 19px 10px 17px 10px;
+  width: 200px;
+  @media only screen and (max-width:$breakpoint-l) {
+
+  }
+}
+.btn__email-input {
+  padding-left: 30px;
+  color: white;
+  width: 50%;
+  @media only screen and (max-width:$breakpoint-l) {
+    width: 45%;
+  }
+}
+.btn--event {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 19px 71px 17px 78px;
+  color: $color-white;
+}
