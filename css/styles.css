@@ -2413,8 +2413,8 @@ html {
   font-size: 15px; }
 
 .btn--email {
-  padding: 19px 73px 17px 78px;
-  width: 220px; }
+  padding: 19px 10px 17px 10px;
+  width: 200px; }
 
 .btn__email-input {
   padding-left: 30px;
@@ -2438,6 +2438,7 @@ html {
 .tile {
   text-align: center;
   margin: 0 auto;
+  max-width: 371px;
   padding: 0 10px 80px 10px; }
 
 .tile__header {

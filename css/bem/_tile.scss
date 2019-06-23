@@ -1,6 +1,7 @@
 .tile {
   text-align: center;
   margin: 0 auto;
+  max-width: 371px;
   padding:0 10px 80px 10px;
 }
 .tile__header {
@@ -41,8 +42,6 @@
   display: flex;
   justify-content: space-between;
   @media only screen and (max-width:$breakpoint-l) {
-    width: 100%;
-
+    width: 100%
   }
-
 }
